@@ -1,11 +1,19 @@
-const a = 5;
-const b = 2;
-let myName = "Jay"
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+// Get Item from Array
+console.log(daysOfWeek);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hi " + myName)
+// Add one more day to the array
+daysOfWeek.push("sun"); 
+console.log(daysOfWeek);
 
-myName = "Jays"
-console.log("Hello " + myName)
+const player = {
+    name: "Jay",
+    points : 10,
+    fat : false,
+};
+console.log(player);
+player.fat = true;
+player.lastName = "potato";
+console.log(player);
+player.points = player.points + 10;
+console.log(player.points);
