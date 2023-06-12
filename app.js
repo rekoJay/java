@@ -49,19 +49,42 @@ console.log(players)
 
 const calculator = {
     add: function(a,b){
-        console.log(a+b);
+        return a + b;
     },
     minus: function(a,b){
-        console.log(a-b);
+        return a - b;
     },
     divide: function(a,b){
-        console.log(a/b);
+        return a / b;
     },
     square: function(a,b){
-        console.log(a**b)
+        return a**b;
     }
-}
-calculator.add(3,4);
+};
+const addResult = calculator.add(3,4);
 calculator.minus(3,4);
 calculator.divide(3,4);
 calculator.square(3,4);
+console.log(addResult);
+
+const minusResult = calculator.minus(addResult, 3);
+const divideResult = calculator.divide(10, minusResult);
+const squareResult = calculator.square(divideResult,minusResult);
+
+const age = 96;
+function calculatorKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
+}
+const krAge = calculatorKrAge(age) ;
+console.log(krAge);
+
+const ageCalculator = parseInt(prompt("How old are you?"));
+if(isNaN(ageCalculator) || ageCalculator < 0) {
+    console.log("Please write a real positive number.");
+} else if (ageCalculator < 18) {
+    console.log("You are too young.");
+} else if (ageCalculator >= 18 && ageCalculator <= 50) {
+    console.log("You can drink.");
+} else {
+    console.log("You should be careful.");
+}
