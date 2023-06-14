@@ -4,6 +4,6 @@ h1 {color: cornflowerblue;
 transition: color .5s ease-in-out;
 font-family: 'Courier New', Courier, monospace;}
 
-.active {
+.clicked {
     color:tomato;
 }
